@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>To-Do List</h1>
+        <p id="quote"></p>
+    </header>
+
+    <main>
+        <section class="task-input">
+            <input type="text" id="taskName" placeholder="Enter new task..." />
+            <input type="date" id="dueDate" />
+            <button id="addTask"><i class="fa fa-plus"></i> Add Task</button>
+        </section>
+
+        <section class="filters">
+            <button data-filter="all">All</button>
+            <button data-filter="pending">Pending</button>
+            <button data-filter="completed">Completed</button>
+        </section>
+
+        <ul id="taskList"></ul>
+
+        <div class="controls">
+            <button id="clearAll">Clear All</button>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
